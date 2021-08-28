@@ -43,7 +43,7 @@ export async function login() {
     if (!authResponse){
         console.log("Algo paso")
     }else{
-        console.log(authResponse);
+        alert(authResponse);
     };
 
    
