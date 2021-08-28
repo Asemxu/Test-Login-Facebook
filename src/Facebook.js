@@ -43,7 +43,7 @@ export async function login() {
     if (!authResponse){
         alert("Algo paso")
     }else{
-        alert(authResponse);
+        alert("Logueado");
     };
 
    
