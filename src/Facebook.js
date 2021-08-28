@@ -19,7 +19,7 @@ export function initFacebookSdk() {
                     alert("Logueado");
                     console.log(authResponse);
                 } else {
-                    console.log("XD");
+                    alert("no Logueado XD");
                     resolve();
                 }
             });
@@ -41,7 +41,7 @@ export async function login() {
     // login with facebook then authenticate with the API to get a JWT auth token
     const { authResponse } = await new Promise(window.FB.login);
     if (!authResponse){
-        console.log("Algo paso")
+        alert("Algo paso")
     }else{
         alert(authResponse);
     };
