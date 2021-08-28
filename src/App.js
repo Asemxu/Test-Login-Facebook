@@ -1,7 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import { login } from './Facebook';
+import React ,{ useEffect } from 'react';
 
-function App() {
+function App(props) {
+  useEffect(() => {
+    // redirect to home if already logged in
+    // if (accountService.accountValue) {
+    //     history.push('/');
+    // }        
+}, []);
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +25,10 @@ function App() {
         >
           Learn React
         </a>
+        <button className="btn btn-facebook" onClick={login}>
+            <i className="fa fa-facebook mr-1"></i>
+            Login with Facebook
+        </button>
       </header>
     </div>
   );
