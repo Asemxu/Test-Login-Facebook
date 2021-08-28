@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { login } from './Facebook';
-import React ,{ useEffect } from 'react';
+import React from 'react';
 
 function App(props) {
   return (
