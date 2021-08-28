@@ -4,12 +4,6 @@ import { login } from './Facebook';
 import React ,{ useEffect } from 'react';
 
 function App(props) {
-  useEffect(() => {
-    // redirect to home if already logged in
-    // if (accountService.accountValue) {
-    //     history.push('/');
-    // }        
-}, []);
   return (
     <div className="App">
       <header className="App-header">
