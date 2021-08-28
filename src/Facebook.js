@@ -16,6 +16,7 @@ export function initFacebookSdk() {
             // auto authenticate with the api if already logged in with facebook
             window.FB.getLoginStatus(({ authResponse }) => {
                 if (authResponse) {
+                    alert("Logueado");
                     console.log(authResponse);
                 } else {
                     console.log("XD");
