@@ -2,17 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { Router } from 'react-router-dom'
-import { initFacebookSdk } from './Facebook.js';
-import { history } from './History'
-initFacebookSdk().then(App);
+// import { initFacebookSdk } from './Facebook.js';
+// initFacebookSdk().then(App);
 // import reportWebVitals from './reportWebVitals';
 
+
 ReactDOM.render(
-  <Router history={history}>
+  <React.StrictMode>
     <App />
-  </Router>,
-  document.getElementById('root')
+  </React.StrictMode>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,30 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import { login } from './Facebook';
+// import { login } from './Facebook';
 import React from 'react';
-
-function App(props) {
+import { BrowserRouter , Route , Switch} from 'react-router-dom';
+import { Login } from './Login';
+import {Registro } from './Registro';
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <button className="btn btn-facebook" onClick={login}>
-            <i className="fa fa-facebook mr-1"></i>
-            Login with Facebook
-        </button>
-      </header>
-    </div>
+    <BrowserRouter>
+        <Switch>
+            <Route exact path="/" component={Login}/>
+            <Route exact path="/Registro" component={Registro}/>
+        </Switch>
+    </BrowserRouter>        
   );
 }
 

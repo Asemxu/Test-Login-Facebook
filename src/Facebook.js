@@ -44,6 +44,7 @@ export async function login() {
         alert("Algo paso")
     }else{
         alert("Logueado");
+        
     };
 
    
