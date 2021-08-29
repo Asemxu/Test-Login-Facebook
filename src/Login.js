@@ -4,7 +4,7 @@ import logo from './logo.svg';
 export const Login = () =>{
     const loginRedirect  = async () =>{
         const uri =`${process.env.REACT_APP_URL}/Registro`
-        window.open(`https://www.facebook.com/v11.0/dialog/oauth?client_id=${process.env.REACT_APP_API_KEY}&redirect_uri=${uri}&response_type=token&auth_type=rerequest&scope=email`,'_blank').focus();
+        window.open(`https://www.facebook.com/v11.0/dialog/oauth?client_id=${process.env.REACT_APP_API_KEY}&redirect_uri=${uri}&response_type=code&auth_type=rerequest&scope=email`,'_blank').focus();
     }
     return (
         <div className="App">
