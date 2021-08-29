@@ -66,10 +66,10 @@ export const Registro =  (props) =>{
             >
                 Learn React
             </a>
-            <h1>Registro y Loguead</h1>
-            <h4>Tus Datos </h4>
+            <h1 style={{margin:0}}>Registro y Logueado</h1>
+            <h4 style={{margin:0}}>Tus Datos </h4>
             <h3 style={{margin:0}}>Tu ID: {isUser.id}</h3>
-            <h5>Nombres y Apellidos: {isUser.name}</h5>
+            <h5 style={{margin:0}}>Nombres y Apellidos: {isUser.name}</h5>
             </header>
         </div>
     )
