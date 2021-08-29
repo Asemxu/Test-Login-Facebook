@@ -31,19 +31,19 @@ export const Registro =  (props) =>{
     //     return infoUser;
     // },[accessToken])
 
-    const getUserInfo = useCallback (async (token) =>{
+    const getUserInfo =  async (token) =>{
         let data = await fetch(`https://graph.facebook.com/me?fields=email,name&access_token=${token.access_token}`)
         let info = await data.json();
         isUserState(info);
         isLoadingState(false);
         return info;
-    },[])
+    }
 
     const getUserInfoAccess = useCallback (async () =>{
         let infoToken = await getTokenAccess();
         let userInfo = await getUserInfo(infoToken);
         return userInfo;
-    },[getTokenAccess,getUserInfo]);
+    },[getTokenAccess]);
 
     const fetchData = useCallback(async  () =>{
        await getUserInfoAccess();
