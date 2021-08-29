@@ -2,7 +2,7 @@ import React , { useEffect, useState , useCallback}from 'react';
 import logo from './logo.svg';
 export const Registro =  (props) =>{
     const [isLoading,isLoadingState] = useState(true);
-    const token = useState(props.location.hash.substr(14));
+    const token =props.location.hash.substr(14);
     const [accessToken,isAccessTokenState] = useState("")
     const [isUser,isUserState] = useState({});
     
